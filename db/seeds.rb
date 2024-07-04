@@ -5,3 +5,19 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+SAMPLE_TODOS = [
+  {
+    title: 'バックエンドをRails APIモードで開発する'
+  },
+  {
+    title: 'Railsの単体テストを実施する'
+  },
+  {
+    title: 'フロントエンドをReact/TypeScriptで開発する'
+  },
+]
+
+SAMPLE_TODOS.each do |todo|
+  Todo.create(todo)
+end
