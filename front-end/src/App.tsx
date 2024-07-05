@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useEffect } from 'react';
 import './App.css';
 import { useTodos } from './hooks/useTodos';
@@ -12,7 +14,7 @@ function App() {
       <h1>Todoリスト</h1>
       <ul>
         {todos.map((todo) => (
-          <li key={todo.title}>
+          <li key={todo.id}>
             {todo.title}<br />
             {todo.is_completed ? "完了" : "未着手"}
           </li>
