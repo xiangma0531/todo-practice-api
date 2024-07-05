@@ -1,5 +1,4 @@
-import React, { useCallback, useEffect } from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
 import { useTodos } from './hooks/useTodos';
 
