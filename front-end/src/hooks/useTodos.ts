@@ -7,7 +7,7 @@ export const useTodos = () => {
 
   const getTodos = useCallback(() => {
     axios
-    .get<Array<Todo>>('https://localhost:3001')
+    .get<Array<Todo>>('http://localhost:3001')
     .then((res) => setTodos(res.data))
     .catch(() => alert('Todoリストの取得に失敗しました'))
   }, []);
